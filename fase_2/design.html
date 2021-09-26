@@ -9,16 +9,29 @@
 <body>
     <style>
         h1{ 
-          color: rgb(19, 127, 214);
+          color: rgb(20, 231, 238);
         }
-        </style>
+    </style>
         <style>
         h1 {
         text-align: center;
         }
         </style>
+            <style>
+            body {
+            background-color: rgba(8, 3, 10, 0.87);
+              color: white;
+            }
+            </style>
+           
+            
+    
+               
     <h1>***Etiquetas básicas de HTML Atributos y Valores***</h1>
     <hr>
+    
+        
+    
     <nav>
 
         <ul>
@@ -61,7 +74,7 @@
                     <style>
                         h5 {
                             color:rgb(206, 48, 185)
-                        }}
+                        }
 
 
                     </style>
@@ -69,17 +82,17 @@
                
                     Esta etiqueta inicia y finaliza todo documento HTML y sirve para indicar que el texto se puede analizar <br>
 
-                    <h5>Head</h5>
+                    <h5><"Head">, <"/Head"></h5>
                     Esta delimita el contenido de la cabecera en el documento, demarca el titulo de la página
 
-                    <h5>Title</h5>
+                    <h5><"Title">, <"/Title"></h5>
                     Aparece en la barra de titulos del navegador web
-                    <h5>b</h5>
+                    <h5><"b">, <"/b"></h5>
                     permite aplicar negrita al texto indicado
                     <h5><"!--"></h5>
                    
                     Esta línea de código le permite comentariar al programador y llevar un orden, adicional, si alguien más va a trabajar sobre el código, las líneas comentariadas le permitiran entender facilmente la estructura del código
-                    <h3>Formatos de Textos</h3>
+                    <h4>Formatos de Textos</h4>
                     <h5><"em"></h5>
                     Aplica letra cursiva al texto indicado
                     <h5><"u"></h5>
@@ -100,8 +113,104 @@
                     <li>Font face</li>
                     Con esta etiqueta seleccionamos el tipo de fuente que se desea aplicar al texto
                    
-                    <h5>Titulos</h5>
-                    h1, h2, h3, h4, h5, h6: Permiten caracterizar y tipificar titulos dentro del texto
+                    <h4>Titulos</h4>
+                    h1, h2, h3, h4, h5, h6: Permiten caracterizar y tipificar titulos dentro del texto, cada uno de estos tiene un cierre anteponiendo /
+                    <h4>Formato para párrafos</h4>
+                    <h5><"br"></h5>
+                    Introduce un salto de línea, esta etiqueta se cierra así misma
+                    <h5><"p">, <"/p"></h5>
+                    Delimita un párrafo de texto <br>
+                    A continuación se muestran algunos parámetros para esta etiqueta
+                    <li><"p align="center"></li>
+                    Aplica alineación centrada
+                    <li><"p align="left"></li>
+                    Aplica alineación hacía la izquierda
+                    <li><"p align="right"></li>
+                    Aplica alineación hacía la derecha
+                    <li><"p align="justify"></li>
+                    Aplica alineación justificada
+                    <br>
+                    <h5><"hr"></h5>
+                    Inserta una línea horizontal
+                    <h5><"div"></h5>
+                    Utilizado para delimitar una sección dentro de un documento, agrupando un número de elementos para agregar estilos seleccionados
+                    <h4>Creación de Listas</h4>
+                    <b> Lista no numerada o no organizada:  </b>                  
+                    <li><"ul">, <"/ul"> </li>
+                    Inicia la Lista:  <"li">, <"/li">
+                                      
+                    <b>Lista numeradas u organizadas: </b>                   
+                    <li><"ol">, <"/ol"> </li>
+                    Inicia la Lista:       <"li">, <"/li">
+                    <h4>Inserción de Imágenes</h4>
+
+                    <li><"img src=dirección de la imagen>:</li>
+                    Inserta la imagen de la dirección indicada
+                    <li><"img border="X">:</li>
+                    Establece un borde a la imagen de la cantidad de pixeles indicados
+                    <li><"img alt="texto explicativo">:</li>
+                    Se muestra un texto al pasar el mouse sobre la imagen
+                    <li><"img align="bottom">:</li>
+                    Alinea la imagen al inferior del texto
+                    <li><"img align="middle">:</li>
+                    Alinea la imagen al medio del texto
+                    <li><"img align="top">:</li>
+                    Alinea la imagen al superior del texto
+                            
+                    <li><"img align="left">:</li>
+                    Alinea la imagen hacía la izquierda del texto
+                    <li><"img align="right">:</li>
+                    Alinea la imagen hacía la deerecho del texto
+
+                    <li><"img hspace="x">:</li>
+                    Espacio horizontal en pixeles entre la imagen y el texto
+                    
+                    <li><"img vspace="y">:</li>
+                    Espacio vertical en pixeles entre la imagen y el texto
+
+                    <h4>Inserción de Tablas</h4>
+
+                    <li><"table">, <"/table"></li>
+                    Define donde inicia y termina la tabla
+                    <li><"td">, <"/td"></li>
+                    Indica el comienzo y el fin de cada una de las columnas o celdas dentro de las filas
+                    <li><"tr">, <"/tr"></li>
+                    Indica el comienzo y el fin de cada una de las filas de la tabla
+
+                    <li><"table width="x"></li>
+                     Determina la anchura de la tabla en pixeles 
+                    <li><"table height="y"></li>
+                    Determina la altura de la tabla en pixeles
+                    <li><"table border="x"></li>
+                    Establece el grosor en pixeles del borde de la tabla
+                    <li><"table cellspacing="x"></li>
+                    Determina el espacio en pixeles entre las celdas
+                    <li><"table cellspading="x"></li>
+                    Determina el espacio en pixeles entre el borde y el texto
+
+                    <h4>Creación de Enlaces</h4>
+                    <li><"a href="www.google.com"">Nombre del enlace<"/a"></li>
+                    Al hacer click sobre el texto del enlace el vinculo creado en href abre
+
+                    <li><"a href="mailto:ejemplo@ejemplo.com"">Nombre del enlace<"/a"></li>
+                    Al hacer click sobre el texto del enlace una ventana se abre para redactar un correo al mail indicado
+
+
+                    
+
+                    
+
+                    
+
+                        
+
+                            
+                        
+                    
+
+
+
+
                     
                     
                 
@@ -120,10 +229,11 @@
 
 
     </nav>
+</body>
 
    
 
     
     
-</body>
+
 </html>
